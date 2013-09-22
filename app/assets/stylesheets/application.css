@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+
+
+ #main_nav{
+     border: solid black;
+     text-align: center;
+     background-color: green;
+ }
+ #main_nav #nav_lower ul li {
+     border: solid black;
+ }
+ #main_nav #nav_lower ul li:hover{
+     background-color: yellow;
+ }
+ #main_nav  #nav_upper{
+     background-color: blue;
+ }
+ 
