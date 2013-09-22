@@ -1,2 +1,34 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<div class ="General-container"> 
+  <div class="hero-unit">
+  <h2> Users</h2>
+  <a href="/" class="btn btn-primary btn-large">Back to Main Menu</a>&nbsp;&nbsp;
+  <%= link_to("Add new User", {:action => "new"}, :class => 'btn btn-primary btn-large') %>
+  <br/>
+  <div class =" identity">Logged in as: <%= session[:username]%> </div>
+  <table class="listing" summary="user list">
+    <tr class= "header">
+      <th>&nbsp;</th>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+      <th>Actions</th>
+    </tr>
+    <% @Users.each do |user| %>
+    <tr>
+      <td><%=user.id %></td>
+      <td><%=user.first_name %></td>
+      <td><%=user.last_name %></td>
+      <td><%=user.username %></td>
+      <td><%=user.email %></td>
+      <td class= "actions">
+        <%=  link_to("Show", user_path(user.id) , :html  => {:method => :get}, :class => 'action show') %>
+        <%=  link_to("Edit", edit_user_path(user.id) , :html => {:method => :get}, :class=>'action edit') %>
+        <%=  link_to("Delete", delete_user_path(user.id), :html => {:method => :get}, :class=>'action delete') %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+  
+  </div>
+</div>

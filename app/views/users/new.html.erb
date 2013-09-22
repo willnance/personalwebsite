@@ -1,12 +1,12 @@
 
-
-
-<div id="model_form">
-  <h1>Users#new</h1>
-  <%= form_for(:User, :url => users_path , :html => {:method => :post}) do |f| %>
-    <%=  render(:partial => "form" , :locals => {:f => f})  %>
-    <div class="form-buttons">
-      <%= submit_tag("Add New User", :class => 'btn btn-primary btn-large') %>
-    </div>
-  <% end %>
+<div class="General-container">
+  <div id="model_form">
+    <h1>Users#new</h1>
+    <%= form_for(:User, :url => users_path , :html => {:method => :post}) do |f| %>
+      <%=  render(:partial => "form" , :locals => {:f => f})  %>
+      <div class="form-buttons">
+        <%= submit_tag("Add New User", :class => 'btn btn-primary btn-large') %>
+      </div>
+    <% end %>
+  </div>
 </div>
