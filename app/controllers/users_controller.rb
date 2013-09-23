@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  layout "default"
   def index
    @users = User.find :all
   end
