@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:User])
-    if user.save
+    if @user.save
       flash[:notice] = "User created Successfully"
       redirect_to(:action => 'index')
     else
