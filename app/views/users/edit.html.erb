@@ -1,2 +1,5 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+
+<%= form_for(:User, :url => users_path , :html => {:method => :put}) do |f| %>
+  <%=render( :partial => "form", :locals => {:f => f})%>
+  <%= submit_tag("Update User", :class => 'btn btn-primary btn-large') %>
+<%end%>

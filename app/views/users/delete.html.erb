@@ -4,7 +4,7 @@
     Are you sure you want to delete this user?
     </p>
     <div id="delete_display">
-      <%= form_for(:user, :url => user_path(@User.id),:html=> {:method => :delete} ) do |f| -%>
+      <%= form_for(:user, :url => user_path(@user.id),:html=> {:method => :delete} ) do |f| -%>
       <div id="record_to_delete">
         <p><%=@user.first_name%> <%=@user.last_name%></p>
       </div>
