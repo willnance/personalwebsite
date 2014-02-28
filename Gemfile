@@ -5,8 +5,11 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
-
+# sass powered bootstrap. Also make sure sass is installed. (dont know what sass is)
+#gem 'sass-rails' # sass-rails needs to be higher than 3.2
+gem 'bootstrap-sass'
+#gem 'mysql2'
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
