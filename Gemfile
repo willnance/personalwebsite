@@ -1,25 +1,28 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
-
+gem 'rails_layout'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# sass powered bootstrap. Also make sure sass is installed. (dont know what sass is)
-#gem 'sass-rails' # sass-rails needs to be higher than 3.2
+gem 'sass-rails' # sass-rails needs to be higher than 3.2
 gem 'bootstrap-sass'
+
 #gem 'mysql2'
+
 gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
 
+ 
+  gem 'coffee-rails', '~> 3.2.1'
+  gem "execjs"
+  
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
+  
   gem 'uglifier', '>= 1.0.3'
 end
 group :production do

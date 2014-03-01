@@ -43,6 +43,7 @@ GEM
     coffee-script-source (1.7.0)
     daemons (1.1.9)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.0.2)
     hike (1.2.3)
@@ -75,6 +76,7 @@ GEM
       activesupport (= 3.2.12)
       bundler (~> 1.0)
       railties (= 3.2.12)
+    rails_layout (1.0.10)
     railties (3.2.12)
       actionpack (= 3.2.12)
       activesupport (= 3.2.12)
@@ -116,9 +118,11 @@ DEPENDENCIES
   activerecord-postgresql-adapter
   bootstrap-sass
   coffee-rails (~> 3.2.1)
+  execjs
   jquery-rails
   pg
   rails (= 3.2.12)
-  sass-rails (~> 3.2.3)
+  rails_layout
+  sass-rails
   thin
   uglifier (>= 1.0.3)
