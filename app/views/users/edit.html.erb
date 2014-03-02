@@ -1,5 +1,6 @@
+<h1>Editing user</h1>
 
-<%= form_for(:User, :url => users_path , :html => {:method => :put}) do |f| %>
-  <%=render( :partial => "form", :locals => {:f => f})%>
-  <%= submit_tag("Update User", :class => 'btn btn-primary btn-large') %>
-<%end%>
+<%= render 'form' %>
+
+<%= link_to 'Show', @user %> |
+<%= link_to 'Back', users_path %>
